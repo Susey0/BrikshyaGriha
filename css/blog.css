@@ -1,0 +1,157 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 992px) { /* For medium devices and smaller */
+    .navbar {
+        padding: 5px 10px; /* Reduce padding on smaller screens */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;    /* Center items */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0; /* Add margin between nav items */
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Align toggler to the right */
+    }
+}
+
+@media (max-width: 576px) { /* For extra small devices */
+    .navbar {
+        padding: 5px; /* Further reduce padding */
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%; /* Full-width items */
+        text-align: center; /* Center text */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px; /* Increase padding for touch targets */
+    }
+}
+/* Responsive Card Columns */
+@media (max-width: 992px) { /* For medium devices and smaller */
+    .col-md-4 {
+        flex: 0 0 50%; /* Adjust to 50% to fit 2 columns */
+        max-width: 50%; /* Set max-width to 50% */
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) { /* For smaller devices */
+    .col-md-4 {
+        flex: 0 0 100%; /* Adjust to 100% to fit 1 column */
+        max-width: 100%; /* Set max-width to 100% */
+        padding: 10px;
+    }
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) { /* For smaller devices */
+    .hero {
+        height: 300px; /* Reduce height on smaller screens */
+    }
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) { /* For smaller devices */
+    .footer {
+        text-align: center; /* Center content */
+    }
+
+    .quick-links, .social-media {
+        margin-bottom: 10px; /* Reduce spacing */
+    }
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) { /* For smaller devices */
+    .navbar {
+        padding: 5px 10px; /* Reduce padding */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;    /* Center items */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0; /* Add margin between nav items */
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Align toggler to the right */
+    }
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    color: #28a745;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

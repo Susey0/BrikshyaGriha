@@ -1,0 +1,284 @@
+
+
+.hero {
+    background-image: url('../images/hero1.jpg'); 
+    margin-top: 15px;
+    background-size: cover; /* Cover for better scaling */
+    background-position: center;
+    color: white;
+    padding: 50px 0;
+    height: 500px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+
+
+.section {
+    padding: 5rem 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card {
+    margin-bottom: 20px; /* Ensure uniform spacing */
+}
+
+.card-body {
+    height: 180px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    height: 200px; 
+    object-fit: contain; 
+}
+
+/* Responsive Card Columns */
+.col-md-4 {
+    flex: 0 0 25%; /* Adjust to 25% to fit 4 columns */
+    max-width: 25%; /* Set max-width to 25% */
+    padding: 10px;
+}
+
+
+.btn-custom {
+    background-color: #5CD63A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-custom:hover {
+    background-color: #3e8e41;
+}
+
+.footer {
+    background-color: #121212;
+    color: #E0E0E0;
+    padding: 20px 0;
+}
+
+.footer img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin-bottom: 20px;
+}
+
+.quick-links {
+    margin-bottom: 20px;
+}
+
+.quick-links h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.quick-links a {
+    color: #E0E0E0;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.quick-links a:hover {
+    color: #5CD63A;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-media h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    color: #E0E0E0;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.social-media a:hover {
+    color: #5CD63A;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.social-icon:hover {
+    color: #5CD63A;
+}
+
+.copyright {
+    font-size: 1rem;
+    color: #E0E0E0;
+    margin-top: 20px;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: #5CD63A;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #5CD63A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #3e8e41;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+.modal {
+    overflow-y: auto; /* Allow modal scrolling */
+}
+@media (max-width: 992px) { /* For medium devices and smaller */
+    .navbar {
+        padding: 5px 10px; /* Reduce padding on smaller screens */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;    /* Center items */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0; /* Add margin between nav items */
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Align toggler to the right */
+    }
+}
+
+@media (max-width: 576px) { /* For extra small devices */
+    .navbar {
+        padding: 5px; /* Further reduce padding */
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%; /* Full-width items */
+        text-align: center; /* Center text */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px; /* Increase padding for touch targets */
+    }
+}
+/* Responsive Card Columns */
+@media (max-width: 992px) { /* For medium devices and smaller */
+    .col-md-4 {
+        flex: 0 0 50%; /* Adjust to 50% to fit 2 columns */
+        max-width: 50%; /* Set max-width to 50% */
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) { /* For smaller devices */
+    .col-md-4 {
+        flex: 0 0 100%; /* Adjust to 100% to fit 1 column */
+        max-width: 100%; /* Set max-width to 100% */
+        padding: 10px;
+    }
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) { /* For smaller devices */
+    .hero {
+        height: 300px; /* Reduce height on smaller screens */
+    }
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) { /* For smaller devices */
+    .footer {
+        text-align: center; /* Center content */
+    }
+
+    .quick-links, .social-media {
+        margin-bottom: 10px; /* Reduce spacing */
+    }
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) { /* For smaller devices */
+    .navbar {
+        padding: 5px 10px; /* Reduce padding */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;    /* Center items */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0; /* Add margin between nav items */
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Align toggler to the right */
+    }
+}

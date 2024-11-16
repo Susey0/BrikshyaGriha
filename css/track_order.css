@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background */
+    margin: 0;
+    padding: 60px 0; /* Add padding to avoid overlap with fixed navbar */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5CD63A; /* Green color for headings */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-nav {
+    flex-direction: row; /* Align items in a row */
+    justify-content: center; /* Center nav items */
+    width: 100%; /* Full width for centering */
+}
+
+.nav-item {
+    margin: 0 15px; /* Spacing between nav items */
+}
+
+.nav-link {
+    color: #333; /* Dark text color */
+    font-weight: 500; /* Bold text */
+}
+
+.nav-link:hover {
+    color: #5CD63A; /* Change color on hover */
+}
+
+/* Profile Dropdown */
+.dropdown-menu {
+    right: 0; /* Align dropdown to the right */
+}
+
+/* Form Styles */
+form {
+    max-width: 600px; /* Limit form width */
+    margin: 0 auto; /* Center the form */
+    background-color: #ffffff; /* White background for form */
+    padding: 20px; /* Inner padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+label {
+    font-weight: bold; /* Bold labels */
+}
+
+input[type="text"] {
+    width: 100%; /* Full width input */
+    padding: 10px; /* Inner padding */
+    margin-bottom: 15px; /* Spacing below input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button[type="submit"] {
+    background-color: #5CD63A; /* Green button */
+    color: #ffffff; /* White text */
+    padding: 10px 20px; /* Inner padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Larger text */
+}
+
+button[type="submit"]:hover {
+    background-color: #4CAF50; /* Darker green on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light text color */
+    padding: 20px 0;
+    margin-top: 40px; /* Space above footer */
+}
+
+.quick-links, .social-media {
+    margin: 20px 0; /* Spacing around links */
+}
+
+.quick-links a, .social-media a {
+    color: #FFC107; /* Yellow color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.quick-links a:hover, .social-media a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.social-icon {
+    font-size: 24px; /* Larger icons */
+    margin: 0 10px; /* Spacing between icons */
+}
+/* Order Status Styles */
+.order-status-container {
+    text-align: center; /* Center text horizontally */
+    margin: 30px auto; /* Center the container with margin */
+    padding: 20px; /* Add some padding */
+    background-color: #f8f9fa; /* Light background for visibility */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 600px; /* Limit the width */
+}

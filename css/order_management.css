@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.sidebar {
+    width: 220px;
+    height: 100%;
+    background-color: #2d3436;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: fixed;
+}
+
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sidebar .logo span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar .menu a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background 0.3s, color 0.3s;
+    background-color: #2d3436;
+}
+
+.sidebar .menu a:hover {
+    background: #636e72;
+    color: #dfe6e9;
+}
+
+.sidebar .menu a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table thead {
+    background-color: #333;
+    color: white;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+table th {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+table td select, table td button {
+    padding: 5px;
+    font-size: 14px;
+}
+
+table td select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+table td button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+table td button:hover {
+    background-color: #555;
+}
+
+form {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar .menu {
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .sidebar .menu a {
+        flex: 1;
+        text-align: center;
+        border-right: 1px solid #444;
+    }
+
+    table th, table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    table td select, table td button {
+        font-size: 12px;
+    }
+}
+.alert.success {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    margin-bottom: 20px;
+}

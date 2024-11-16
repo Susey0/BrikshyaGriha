@@ -1,0 +1,226 @@
+/* General styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+.navbar {
+    background-color: #f8f9fa; /* Light background for navbar */
+    padding:  0.8rem 1rem; /* Padding to give space around items */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 50px; /* Logo size */
+    margin-right: 10px; /* Space between logo and brand text */
+}
+
+/* Centering the Nav Items */
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center; /* Centers nav items horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+.nav-item {
+    justify-content: center;
+    padding: 0 10px; /* Combined padding */
+}
+
+.navbar-toggler {
+    border: none; /* Remove border for toggle button */
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+    background-color: #ffffff; /* White background for dropdown */
+    border: 1px solid #e0e0e0;
+}
+
+.dropdown-item {
+    color: #000; /* Black text color */
+    padding: 10px 15px;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1; /* Hover effect for dropdown items */
+}
+
+
+/* Hero Section */
+.hero {
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* About Us Section */
+.about-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2d572c;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2d572c;
+}
+
+.why-choose-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-choose-us ul li {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-choose-us ul li i {
+    font-size: 28px;
+    margin-right: 10px;
+    color: #2d572c;
+}
+
+/* Our Commitment Section */
+.our-commitment {
+    padding: 60px 20px;
+    background-color: #fff;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.our-commitment h2 {
+    font-size: 36px;
+    color: #2d572c;
+    margin-bottom: 30px;
+}
+
+.our-commitment p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.our-commitment img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #2d572c;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer p a {
+    color: #a9dfbf;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer p a:hover {
+    color: white;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        padding-right: 0;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+
+    .why-choose-us ul li {
+        flex-direction: column;
+    }
+}
